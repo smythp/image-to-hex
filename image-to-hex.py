@@ -1,6 +1,7 @@
 from PIL import Image
+import sys
 
-im = Image.open('test.png')
+im = Image.open(sys.argv[1])
 
 pixels = im.load()
 
